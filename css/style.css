@@ -14,8 +14,8 @@
 /* FONT FACE */
 @font-face {
     font-family: 'Poppins';
-    src: url('Poppins-Bold.woff2') format('woff2'),
-        url('Poppins-Bold.woff') format('woff');
+    src: url('../fonts/Poppins-Bold.woff2') format('woff2'),
+        url('../fonts/Poppins-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -23,8 +23,8 @@
 
 @font-face {
     font-family: 'Poppins';
-    src: url('Poppins-Medium.woff2') format('woff2'),
-        url('Poppins-Medium.woff') format('woff');
+    src: url('../fonts/Poppins-Medium.woff2') format('woff2'),
+        url('../fonts/Poppins-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -32,8 +32,8 @@
 
 @font-face {
     font-family: 'Poppins';
-    src: url('Poppins-MediumItalic.woff2') format('woff2'),
-        url('Poppins-MediumItalic.woff') format('woff');
+    src: url('../fonts/Poppins-MediumItalic.woff2') format('woff2'),
+        url('../fonts/Poppins-MediumItalic.woff') format('woff');
     font-weight: 500;
     font-style: italic;
     font-display: swap;
@@ -66,7 +66,7 @@ body{
     margin: 0;
     font-size: 16px;
     line-height: 26px;
-    font-family: var(--body-font-family);
+    font-family: "Poppins", "Arial", sans-serif;
     font-weight: 500;
     background-color: #fff;
     color: var(--text-color);
@@ -93,7 +93,7 @@ img{
     display: inline-block;
     padding: 14px 40px 12px;
     border: 0px;
-    border-radius: 28px;
+    border-radius: 35px;
     background-color: var(--accent-color);
     color: #fff;
     font-size: 20px;
@@ -120,6 +120,7 @@ img{
 
 .button--big{
     font-size: 18px 40px 16px;
+    border-radius: 35px;
 }
 
 .button--rectangle{
@@ -148,7 +149,7 @@ img{
 
 /* SITEHEADER */
 .site-header {
-    padding-top: 48px;
+    padding-top: 47px;
     padding-bottom: 48px;
     background-color: #fff;
     font-weight: bold;
@@ -161,7 +162,7 @@ img{
 }
 
 .site-header__logo {
-    margin-right: 45px;
+    margin-right: 46.5px;
 }
 
 /* LOGO */
@@ -233,6 +234,36 @@ img{
     opacity: 0.6;
 }
 
+
+/* HERO */
+.hero {
+    padding-top: 92px;
+    padding-bottom: 222px;
+    background-image: url("../img/hero-bg.svg");
+    background-repeat: no-repeat;
+    background-position: left calc(50% + 475px) top 28px;
+}
+
+.hero__inner {
+    max-width: 565px;
+}
+
+.hero__title {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 79px;
+    line-height: 90px;
+    letter-spacing: -2px;
+    color: var(--text-color-dark);
+    font-weight: bold;
+}
+
+.hero__text {
+    margin-top: 0;
+    margin-bottom: 38px;
+    font-size: 22px;
+    line-height: 36px;
+}
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
