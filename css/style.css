@@ -158,10 +158,6 @@ select:-webkit-autofill:focus {
     border-radius: 10px;
 }
 
-.url-shortener__copy-button{
-    min-width: 103px;
-}
-
 .main-content{
     flex-grow: 1;
 }
@@ -401,6 +397,15 @@ select:-webkit-autofill:focus {
     text-decoration: none;
     color: var(--accent-color);
 }
+
+.url-shortener__copy-button{
+    min-width: 103px;
+}
+
+.url-shortener__copy-button--copied{
+    background-color: #3a3054;
+}
+
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
