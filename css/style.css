@@ -535,8 +535,6 @@ select:-webkit-autofill:focus {
     margin-bottom: 32px;
 }
 
-.button {
-}
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
